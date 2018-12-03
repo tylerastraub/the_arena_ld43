@@ -6,11 +6,17 @@ Our main hero, magenta box man, must fight off waves of enemies as he endures gr
 The development of this game was unfortunately shortened by real life distractions, so total development time is only around 15 hours, which mainly cut into the creation of art and music. The entire game framework was designed from scratch as well (besides base SFML libraries), so a majority of development went towards creating a functioning engine. Regardless, this was a lot of fun to create and a lot was learned.
 
 ## Tools used
+
 -C++
+
 -SFML 2.5.1
+
 -Visual Studio 2017 Community Edition
 
 ## Controls
+
 -Arrow keys to move
+
 -Space to attack
+
 -R to restart
