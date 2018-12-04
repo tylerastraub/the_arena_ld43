@@ -85,7 +85,7 @@ void ArenaState::render(sf::RenderWindow& window)
 	downgrades_text.setFont(main_font);
 	downgrades_text.setPosition(10, window.getSize().y - 24);
 	downgrades_text.setString("downgrades: ");
-	downgrades_text.setCharacterSize(15);
+	downgrades_text.setCharacterSize(12);
 	for (auto it : current_downgrade->downgrade_descriptions)
 	{
 		downgrades_text.setString(downgrades_text.getString() + it + ",");

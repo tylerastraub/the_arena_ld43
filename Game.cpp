@@ -17,7 +17,7 @@ Game::Game()
 	std::vector<Wave*> wave_list;
 
 	// i < number of total waves
-	for (int i = 0; i < 8; ++i)
+	for (int i = 0; i < 7; ++i)
 	{
 		downgrade_list.push_back(new Downgrade());
 		wave_list.push_back(new Wave((i + 1) * 3, ceil((i + 1) * 1.5), i + 1));
@@ -33,12 +33,10 @@ Game::Game()
 	downgrade_list[3]->downgrade_descriptions.push_back(" stronger enemies");
 	downgrade_list[4]->movement_mod = 0.7;
 	downgrade_list[4]->downgrade_descriptions.push_back(" player is slowed");
-	downgrade_list[5]->attack_mod = 0.5;
-	downgrade_list[5]->downgrade_descriptions.push_back(" player is weaker");
-	downgrade_list[6]->enemy_size_mod = 2.0;
-	downgrade_list[6]->downgrade_descriptions.push_back(" bigger enemies");
-	downgrade_list[7]->friction_mod = 0.05;
-	downgrade_list[7]->downgrade_descriptions.push_back(" ground is icy");
+	downgrade_list[5]->enemy_size_mod = 2.0;
+	downgrade_list[5]->downgrade_descriptions.push_back(" bigger enemies");
+	downgrade_list[6]->friction_mod = 0.05;
+	downgrade_list[6]->downgrade_descriptions.push_back(" ground is icy");
 
 	sf::Clock clock;
 
